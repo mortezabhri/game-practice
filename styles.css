@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Marhey", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    user-select: none;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffebcd;
+}
+
+.game-container {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #d63384;
+}
+
+.game-area {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #fff3f3;
+    border: 2px solid #d63384;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.player {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.obstacle {
+    width: 50px;
+    height: 50px;
+    background-color: #ff7b7b;
+    position: absolute;
+    border-radius: 10px;
+
+}
+
+.obstacle1 {
+    top: 0px;
+    left: 105px;
+    animation: moveObstacle1 3s infinite alternate;
+}
+
+.obstacle2 {
+    top: 0px;
+    left: 217px;
+    animation: moveObstacle2 1s infinite alternate;
+}
+
+.obstacle3 {
+    top: 0px;
+    left: 50px;
+    animation: moveObstacle3 4s infinite alternate;
+}
+
+.obstacle4 {
+    top: 0px;
+    left: 160px;
+    animation: moveObstacle4 4s infinite alternate;
+}
+
+.goal {
+    width: 80px;
+    height: 40px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 11px;
+    direction: rtl;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a81d6e;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.controls div {
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+@keyframes moveObstacle1 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(250px);
+    }
+}
+@keyframes moveObstacle2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(250px);
+    }
+}
+@keyframes moveObstacle3 {
+    0% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(250px);
+    }
+}
+@keyframes moveObstacle4 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(250px);
+    }
+}
